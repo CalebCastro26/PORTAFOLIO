@@ -12,7 +12,6 @@ const { title } = Astro.props
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,5 +34,24 @@ const { title } = Astro.props
 </html>
 <style is:global>
   :root {
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5290b4;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+
+  .tab-links.active-link::after {
+    width: 50%;
   }
 </style>

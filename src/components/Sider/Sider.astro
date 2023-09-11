@@ -3,5 +3,15 @@ import { ContentSider } from './ContentSider'
 ---
 
 <section class="bg-gray-300 w-[100%] h-[70vh] flex justify-center items-center">
-  <ContentSider client:visible />
+  <div class="flex flex-col">
+    <p class="px-10 text-sm tracking-widest mb-5 md:text-2xl lg:text-2xl">
+      Full Stack Developer
+    </p>
+    <h1
+      class="text-[#1f1f25] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-[900] font-['Montserrat'] px-10"
+    >
+      Hello, I'm <span class="text-[#379fab]">Caleb Castro.</span>
+    </h1>
+    <ContentSider client:visible />
+  </div>
 </section>

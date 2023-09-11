@@ -22,10 +22,10 @@ export function MenuMobile() {
         </div>
         <ul>
           <li className="pt-3 pb-3 font-[500] text-[18px] tracking-wide cursor-pointer hover:text-[#5290b4]">
-            Home
+            <a href="#">Home</a>
           </li>
           <li className="pt-3 pb-3 font-[500] text-[18px] tracking-wide cursor-pointer hover:text-[#5290b4]">
-            About
+            <a href="#about">About</a>
           </li>
           <li className="pt-3 pb-3 font-[500] text-[18px] tracking-wide cursor-pointer hover:text-[#5290b4]">
             Skills

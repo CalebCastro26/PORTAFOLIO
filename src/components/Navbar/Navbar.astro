@@ -1,12 +1,13 @@
 ---
 import { MenuMobile } from './MenuMobile'
+import Sider from '../Sider/Sider.astro'
 ---
 
 <header
-  class="pl-[30px] pr-[30px] lg:pl-[50px] lg:pr-[50px] md:pl-[30px] md:pr-[30px] fixed top-0 z-10 w-[100%]"
+  class="pl-[30px] pr-[30px] lg:pl-[50px] lg:pr-[50px] md:pl-[30px] md:pr-[30px] z-10 w-[100%]"
 >
   <div
-    class="pt-[20px] pb-[20px] flex justify-between lg:pt-[50px] lg:pb-[50px] md:pt-[30px] md:pb-[30px]"
+    class="pt-[20px] pb-[20px] flex justify-between lg:pt-[40px] lg:pb-[40px] md:pt-[30px] md:pb-[30px]"
   >
     <div class="flex justify-center items-center">
       <div>
@@ -19,46 +20,54 @@ import { MenuMobile } from './MenuMobile'
           <li
             class="font-[500] text-[15px] tracking-wider cursor-pointer hover:text-[#5290b4]"
           >
-            Home
+            <a href="#"> Home</a>
           </li>
           <li
             class="font-[500] text-[15px] tracking-wide cursor-pointer hover:text-[#5290b4]"
           >
-            About
+            <a href="#about"> About</a>
           </li>
           <li
             class="font-[500] text-[15px] tracking-wide cursor-pointer hover:text-[#5290b4]"
           >
-            Skills
+            <a href="#skills"> Skills</a>
           </li>
           <li
             class="font-[500] text-[15px] tracking-wide cursor-pointer hover:text-[#5290b4]"
           >
-            Work
+            <a href="#work"> Work</a>
           </li>
           <li
             class="font-[500] text-[15px] tracking-wide cursor-pointer hover:text-[#5290b4]"
           >
-            Contact
+            <a href="#contact"> Contact</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="flex justify-center items-center">
       <div class="gap-3 mr-8 flex justify-end flex-wrap md:gap-6 md:mr-0">
-        <a href="https://github.com/CalebCastro26" target="_blank">
+        <a href="https://github.com/CalebCastro26" target="_blank" class="mt-3">
           <ion-icon
             name="logo-github"
             class="text-[17px] transition ease-in-out hover:-translate-y-1 hover: duration-300 hover:text-[#5290b4] cursor-pointer md:text-[20px]"
           ></ion-icon>
         </a>
-        <a href="https://www.linkedin.com/in/calebcastro/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/calebcastro/"
+          target="_blank"
+          class="mt-3"
+        >
           <ion-icon
             name="logo-linkedin"
             class="text-[17px] transition ease-in-out hover:-translate-y-1 hover: duration-300 hover:text-[#5290b4] cursor-pointer md:text-[20px]"
           ></ion-icon>
         </a>
-        <a href="https://www.instagram.com/calebcastro26/" target="_blank">
+        <a
+          href="https://www.instagram.com/calebcastro26/"
+          target="_blank"
+          class="mt-3"
+        >
           <ion-icon
             name="logo-instagram"
             class="text-[17px] transition ease-in-out hover:-translate-y-1 hover: duration-300 hover:text-[#5290b4] cursor-pointer md:text-[20px]"

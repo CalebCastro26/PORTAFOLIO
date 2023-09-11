@@ -1,17 +1,36 @@
-<section class="flex pl-[30px] pr-[30px] mt-[120px]">
-  <div>
-    <img src="/caleb.jpg" alt="" />
-  </div>
-  <div>
-    <h1
-      class="text-[#1f1f25] text-2xl md:text-3xl lg:text-5xl font-[700] font-['Poppins'] px-10"
-    >
-      About Me
-    </h1>
-    <p>
-      I see myself as a proactive, thoughtful and very committed person. My main
-      experience is in web application development. I'm from Peru! I have
-      knowledge of Javascript, React, Node JS and relational databases.
-    </p>
+---
+import TabLinks from './TabLinks'
+---
+
+<section
+  id="about"
+  class="flex pl-[30px] pr-[30px] pt-[120px] pb-[120px] h-max"
+>
+  <div class="w-max pr-[15px] pl-[15px] mr-auto ml-auto max-w-[1250px]">
+    <div class="flex flex-wrap justify-center">
+      <div class="flex justify-center basis-[35%]">
+        <img
+          src="/caleb.jpg"
+          alt="Caleb Castro"
+          class="w-max rounded-md object-cover"
+        />
+      </div>
+      <div class="pl-[25px] pr-[25px] basis-[65%]">
+        <h1
+          class="text-[#1f1f25] text-2xl md:text-3xl lg:text-6xl font-[700] font-['Poppins'] px-10"
+        >
+          About Me
+        </h1>
+        <div class="ml-[40px] mt-[20px]">
+          <p class="font-['Poppins'] font-[300] text-[18px]">
+            I see myself as a proactive, thoughtful and very committed person.
+            My main experience is in web application development. I'm from Peru!
+            I have knowledge of Javascript, React, Node JS and relational
+            databases.
+          </p>
+          <TabLinks client:visible />
+        </div>
+      </div>
+    </div>
   </div>
 </section>
